@@ -6,6 +6,7 @@
     <title>Yago Menéndez | Backend Developer & Cloud</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
@@ -57,7 +58,10 @@
             margin-right: 5px;
         }
 
-        #hero { padding: 100px 0; }
+        .tech-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .icon-django { filter: brightness(0) invert(1); }
+
+        #hero { padding: 80px 0; }
     </style>
 </head>
 <body>
@@ -84,37 +88,65 @@
         <div class="col-lg-8">
             <h1 class="display-2 fw-bold mb-4">Ingeniería, <span class="text-gradient">Backend</span> y Cloud</h1>
             <p class="lead mb-5 text-secondary">
-                Desarrollador enfocado en Python, Java y soluciones serverless.
-                Actualmente optimizando infraestructuras IT y cursando Ingeniería Informática.
+                Desarrollador enfocado en soluciones escalables con Python, Java y Cloud.
+                Estudiante de Ingeniería Informática en la UAX.
             </p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="#proyectos" class="btn btn-primary btn-lg px-4">Explorar Proyectos</a>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#proyectos" class="btn btn-primary btn-lg px-4 shadow">Ver Proyectos</a>
                 <a href="https://github.com/ymvs84/" target="_blank" class="btn btn-outline-light btn-lg px-4">
                     <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="Yago_Menendez_CV.pdf" target="_blank" class="btn btn-outline-info btn-lg px-4">
+                    <i class="bi bi-file-earmark-pdf"></i> Descargar CV
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="container mb-5">
-    <div class="row g-4">
+<section id="sobre-mi" class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+            <h2 class="fw-bold mb-4">Sobre <span class="text-gradient">Mí</span></h2>
+            <p class="text-secondary">
+                Soy un desarrollador backend y estudiante de <strong>Ingeniería Informática</strong>. Mi enfoque se centra en construir soluciones eficientes, escalables y resilientes.
+            </p>
+            <p class="text-secondary">
+                En mi rol como Técnico de TI en SEMIC, he liderado la automatización de procesos mediante Python y PowerShell, logrando reducir los tiempos de ejecución en un <strong>70%</strong>. Mi pasión por la infraestructura me ha llevado a certificarme en <strong>AWS y Azure</strong>.
+            </p>
+        </div>
+        <div class="col-lg-5">
+            <div class="card p-4 border-info bg-opacity-10">
+                <h5 class="fw-bold text-gradient mb-3"><i class="bi bi-rocket-takeoff"></i> Valor Diferencial</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i> Automatización avanzada (Python/PowerShell).</li>
+                    <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i> Desarrollo Backend (Django/Java).</li>
+                    <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i> Soluciones Cloud & Serverless.</li>
+                    <li><i class="bi bi-check2-circle text-info me-2"></i> Soporte a +450 usuarios corporativos.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-4">
+    <div class="row g-4 text-center">
         <div class="col-md-4">
-            <div class="card p-4 text-center">
+            <div class="card p-4">
                 <h2 class="text-gradient fw-bold">-70%</h2>
-                <p class="mb-0">Tiempo de ejecución en tareas automatizadas </p>
+                <p class="mb-0 small text-secondary">Tiempo en automatizaciones.</p>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card p-4 text-center">
+            <div class="card p-4">
                 <h2 class="text-gradient fw-bold">+450</h2>
-                <p class="mb-0">Usuarios bajo soporte técnico nivel 1 y 2 [cite: 32]</p>
+                <p class="mb-0 small text-secondary">Usuarios nivel 1 y 2.</p>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card p-4 text-center">
+            <div class="card p-4">
                 <h2 class="text-gradient fw-bold">100%</h2>
-                <p class="mb-0">Foco en soluciones eficientes y resilientes [cite: 8]</p>
+                <p class="mb-0 small text-secondary">Enfoque en eficiencia.</p>
             </div>
         </div>
     </div>
@@ -122,33 +154,45 @@
 
 <section id="skills" class="container py-5">
     <h2 class="text-center mb-5 fw-bold">Especialización <span class="text-gradient">Técnica</span></h2>
-    <div class="row g-4">
+    <div class="row g-4 text-center">
         <div class="col-md-3">
             <div class="card p-4 h-100">
-                <i class="bi bi-code-square fs-1 text-primary mb-3"></i>
+                <div class="d-flex justify-content-center gap-2 tech-icon">
+                    <i class="devicon-python-plain colored"></i>
+                    <i class="devicon-java-plain colored"></i>
+                </div>
                 <h5>Lenguajes</h5>
-                <p class="small text-secondary">Python, Java, C#, SQL [cite: 10]</p>
+                <p class="small text-secondary">Python, Java, C#, SQL.</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card p-4 h-100">
-                <i class="bi bi-cloud-sun fs-1 text-info mb-3"></i>
+                <div class="d-flex justify-content-center gap-2 tech-icon">
+                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                    <i class="devicon-azure-plain colored"></i>
+                </div>
                 <h5>Cloud</h5>
-                <p class="small text-secondary">AWS (Developer Associate) & Azure Cloud Developer </p>
+                <p class="small text-secondary">AWS Developer Associate y Azure.</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card p-4 h-100">
-                <i class="bi bi-layers fs-1 text-warning mb-3"></i>
+                <div class="d-flex justify-content-center gap-2 tech-icon">
+                    <i class="devicon-django-plain icon-django"></i>
+                    <i class="devicon-flask-original text-white"></i>
+                </div>
                 <h5>Frameworks</h5>
-                <p class="small text-secondary">Django, Flask, Django REST Framework</p>
+                <p class="small text-secondary">Django, Flask, DRF.</p>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card p-4 h-100">
-                <i class="bi bi-terminal fs-1 text-danger mb-3"></i>
-                <h5>DevOps</h5>
-                <p class="small text-secondary">Git, CI/CD, PowerShell, Bash</p>
+                <div class="d-flex justify-content-center gap-2 tech-icon">
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="bi bi-terminal-fill text-white"></i>
+                </div>
+                <h5>DevOps & Tools</h5>
+                <p class="small text-secondary">Git, CI/CD, PowerShell, Bash.</p>
             </div>
         </div>
     </div>
@@ -158,59 +202,55 @@
     <h2 class="text-center mb-5 fw-bold text-gradient">Proyectos Destacados</h2>
     <div class="row g-4">
         <div class="col-md-6">
-            <div class="card h-100">
+            <div class="card h-100 d-flex flex-column">
                 <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <i class="bi bi-water text-info fs-1"></i>
+                        <span class="badge rounded-pill bg-dark border border-info text-info">Backend & GIS</span>
+                    </div>
                     <h4 class="fw-bold">DiveLogApp</h4>
                     <div class="mb-3">
                         <span class="badge badge-tech">Django 5</span>
-                        <span class="badge badge-tech">GIS</span>
                         <span class="badge badge-tech">PostgreSQL</span>
                     </div>
-                    <p class="text-secondary">Aplicación web para buceadores con geolocalización avanzada y gestión completa de inmersiones.</p>
-                    <a href="https://github.com/ymvs84" class="btn btn-sm btn-outline-primary">Ver en GitHub</a>
+                    <p class="text-secondary small">Aplicación web para buceadores con geolocalización avanzada.</p>
+                    <a href="https://github.com/ymvs84/DiveLogApp-Showcase" class="btn btn-primary w-100 py-2 fw-bold mt-auto" target="_blank">
+                        <i class="bi bi-github me-2"></i> Ver Repositorio
+                    </a>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
-    <div class="card h-100">
-        <div class="card-body p-4">
-            <h4 class="fw-bold">Enterprise CCTV Viewer</h4>
-            <div class="mb-3">
-                <span class="badge badge-tech">Python</span>
-                <span class="badge badge-tech">OpenCV</span>
-                <span class="badge badge-tech">Networking</span>
-            </div>
-            <p class="text-secondary">Sistema de visualización de cámaras de seguridad para entornos empresariales. Gestión de flujos de video en tiempo real y optimización de red.</p>
-            <a href="https://github.com/ymvs84/Enterprise-CCTV-Viewer" class="btn btn-sm btn-outline-primary" target="_blank">Ver en GitHub</a>
-        </div>
-    </div>
-</div>
-        <div class="col-md-6">
-            <div class="card h-100">
+            <div class="card h-100 d-flex flex-column">
                 <div class="card-body p-4">
-                    <h4 class="fw-bold">Gestión de Biblioteca</h4>
-                    <div class="mb-3">
-                        <span class="badge badge-tech">Java</span>
-                        <span class="badge badge-tech">JavaFX</span>
-                        <span class="badge badge-tech">MySQL</span>
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <i class="bi bi-camera-video text-danger fs-1"></i>
+                        <span class="badge rounded-pill bg-dark border border-danger text-danger">CV & Networking</span>
                     </div>
-                    <p class="text-secondary">Sistema CRUD de escritorio con autenticación y control de roles.</p>
-                    <a href="https://github.com/ymvs84/Biblioteca" class="btn btn-sm btn-outline-primary">Ver en GitHub</a>
+                    <h4 class="fw-bold">Enterprise CCTV Viewer</h4>
+                    <div class="mb-3">
+                        <span class="badge badge-tech">Python</span>
+                        <span class="badge badge-tech">OpenCV</span>
+                    </div>
+                    <p class="text-secondary small">Visualización en tiempo real y optimización de redes corporativas.</p>
+                    <a href="https://github.com/ymvs84/Enterprise-CCTV-Viewer" class="btn btn-primary w-100 py-2 fw-bold mt-auto" target="_blank">
+                        <i class="bi bi-github me-2"></i> Ver Repositorio
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="py-5 mt-5 bg-dark border-top border-secondary">
-    <div class="container text-center">
+<footer class="py-5 mt-5 bg-dark border-top border-secondary text-center">
+    <div class="container">
+        <h4 class="mb-4">¿Hablamos?</h4>
         <div class="mb-4">
-            <a href="https://www.linkedin.com/in/ymenendez/" class="text-white mx-3 fs-3"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/ymvs84/" class="text-white mx-3 fs-3"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/ymenendez/" target="_blank" class="text-white mx-3 fs-3"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/ymvs84/" target="_blank" class="text-white mx-3 fs-3"><i class="bi bi-github"></i></a>
             <a href="mailto:menendez.yago@gmail.com" class="text-white mx-3 fs-3"><i class="bi bi-envelope-at-fill"></i></a>
         </div>
-        <p class="text-secondary">© 2026 Yago Menéndez de la Vega Sepúlveda</p>
-        <p class="small text-muted">Ingeniería Informática - Univ. Alfonso X El Sabio [cite: 18]</p>
+        <p class="text-secondary small">© 2026 Yago Menéndez - Fuenlabrada, Madrid</p>
     </div>
 </footer>
 
